@@ -19,9 +19,10 @@ Karaf Setup:
 
 -- Active MQ ---
 Place the following files from the karaf-etc folder into the etc folder of your karaf installation.
- activemq.xml
- org.apache.activemq.server-default.cfg
- org.apache.activemq.webconsole.cfg
+> activemq.xml
+> org.apache.activemq.server-default.cfg
+> org.apache.activemq.webconsole.cfg
+
 In order to get the projects running the following features need to be installed:
 
 --- FEATURES -------
@@ -63,18 +64,19 @@ Install samples
 After installation:
 
 Accessing wsdl:
-http://localhost:8181/cxf/video-info/webservices/video?wsdl
+>http://localhost:8181/cxf/video-info/webservices/video?wsdl
 
 Accesing activemq brokers:
-http://localhost:8181/activemqweb 
+>http://localhost:8181/activemqweb 
 
-Client Application:
-cd <parent-directory>/webservices-client
-sbt stage
-./target/universal/stage/bin/webservice-client
+Build client application:
+>cd <parent-directory>/webservices-client
+>sbt stage
+To run the client application
+>./target/universal/stage/bin/webservice-client
 
 To test installation type:
-http://localhost:8080
+>http://localhost:8080
 This will provide you with a test page that does a round trip test of all the components.
 
 
