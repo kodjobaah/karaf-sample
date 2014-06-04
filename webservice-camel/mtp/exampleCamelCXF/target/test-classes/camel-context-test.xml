@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:cxf="http://camel.apache.org/schema/cxf"
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/cxf http://camel.apache.org/schema/cxf/camel-cxf.xsd
+       http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+    
+	<cxf:cxfEndpoint id="CustomersServiceConsumerEndpoint"
+		serviceClass="com.camel.examples.CustomersService"
+		address="/CustomersService">
+		<cxf:properties>
+			<!-- set the camel-cxf endpoint data fromat to PAYLOAD mode -->
+			<entry key="dataFormat" value="PAYLOAD" />
+			<entry key="setDefaultBus" value="true"/>
+		</cxf:properties>
+		<cxf:inInterceptors>
+			<bean class="org.apache.cxf.interceptor.LoggingInInterceptor" />
+		</cxf:inInterceptors>
+		<cxf:outInterceptors>
+			<bean class="org.apache.cxf.interceptor.LoggingOutInterceptor" />
+		</cxf:outInterceptors>
+		<cxf:inFaultInterceptors>
+			<bean class="org.apache.cxf.interceptor.LoggingInInterceptor" />
+		</cxf:inFaultInterceptors>
+	</cxf:cxfEndpoint>
+
+    <camelContext id="contextTest" xmlns="http://camel.apache.org/schema/spring">
+        <route id="routeTest" trace="true">
+            <from uri="cxf:bean:CustomersServiceConsumerEndpoint" />
+			<to uri="xslt:xslt/mockCustomers.xslt?failOnNullBody=false"/>
+			<to uri="mock:result" />
+        </route>
+    </camelContext>
+
+</beans>

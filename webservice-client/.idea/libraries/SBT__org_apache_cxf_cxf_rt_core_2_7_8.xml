@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="SBT: org.apache.cxf:cxf-rt-core:2.7.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.cxf/cxf-rt-core/jars/cxf-rt-core-2.7.8.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.cxf/cxf-rt-core/docs/cxf-rt-core-2.7.8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.cxf/cxf-rt-core/srcs/cxf-rt-core-2.7.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

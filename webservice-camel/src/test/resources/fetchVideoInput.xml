@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.waid.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:inputFetchVideo>
+         <videoId>myVideoId</videoId>
+      </web:inputFetchVideo>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="karaf-kar">
+
+<feature name='karaf-sample' version='0.0.1'>
+    <config name="org.apache.cxf.osgi">
+		org.apache.cxf.servlet.context=/video
+    </config>
+    <config name="org.apache.activemq.server-default">
+    	broker-name=amq-broker
+		data=${karaf.data}/${broker-name}
+		config=${karaf.base}/etc/activemq.xml
+    </config>
+    <config name="org.apache.activemq.webconsole">
+		webconsole.jms.url=tcp://localhost:61616
+		webconsole.jmx.url=service:jmx:rmi:///jndi/rmi://localhost:1099/karaf-root
+		webconsole.jmx.user=karaf
+		webconsole.jmx.password=karaf
+		webconsole.jms.user=karaf
+		webconsole.jms.password=karaf
+    </config>
+	<feature>war</feature>
+	<feature>jndi</feature>
+	<feature>jpa</feature>
+	<feature>transaction</feature>
+	<feature>cxf</feature>
+	<feature version="2.13.1">camel-jaxb</feature>
+	<feature version="2.13.1">camel-blueprint</feature>
+	<feature version="2.13.1">camel-cxf</feature>
+	<feature version="2.13.1">camel-velocity</feature>
+	<feature version="5.9.0">activemq-broker</feature>
+	<feature version="5.9.0">activemq-camel</feature>
+	<bundle>mvn:org.ops4j.pax.url/pax-url-commons/2.0.0</bundle>
+	<bundle>mvn:org.ops4j.pax.url/pax-url-classpath/2.0.0</bundle>
+	<bundle>mvn:org.apache.geronimo.specs/geronimo-jpa_2.0_spec/1.1</bundle>
+	<bundle>mvn:commons-collections/commons-collections/3.2.1</bundle>
+	<bundle>mvn:commons-pool/commons-pool/1.5.4</bundle>
+	<bundle>mvn:commons-dbcp/commons-dbcp/1.4</bundle>
+	<bundle>mvn:commons-lang/commons-lang/2.6</bundle>
+	<bundle>wrap:mvn:net.sourceforge.serp/serp/1.13.1</bundle>
+	<bundle>mvn:org.apache.openjpa/openjpa/2.1.1</bundle>
+    <bundle start-level='80'>mvn:com.waid/webservice-interface/0.0.1</bundle>    
+    <bundle start-level='85'>mvn:com.waid/webservice-camel/0.0.1</bundle>
+    <bundle start-level='85'>mvn:com.waid/entities/0.0.1</bundle>
+</feature> 
+</features>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://webservice.waid.com"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	targetNamespace="http://webservice.waid.com">
+
+    <!-- Type definitions for input- and output parameters for webservice -->
+    <wsdl:types>
+        <xs:schema targetNamespace="http://webservice.waid.com">
+            <xs:element name="inputFetchVideo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element type="xs:string" name="videoId"/>
+       					<xs:element name="name" type="xs:string" nillable="true" minOccurs="0" 
+            maxOccurs="unbounded"/>
+                     </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="outputFetchVideo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element type="xs:string" name="name"/>
+                        <xs:element type="xs:integer" name="amount" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </wsdl:types>
+
+    <!-- Message definitions for input and output -->
+    <wsdl:message name="inputFetchVideo">
+        <wsdl:part name="in" element="tns:inputFetchVideo"/>
+    </wsdl:message>
+    <wsdl:message name="outputFetchVideo">
+        <wsdl:part name="out" element="tns:outputFetchVideo"/>
+    </wsdl:message>
+
+    <!-- Port (interface) definitions -->
+    <wsdl:portType name="FetchVideoEndpoint">
+        <wsdl:operation name="FetchVideo">
+            <wsdl:input message="tns:inputFetchVideo"/>
+            <wsdl:output message="tns:outputFetchVideo"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <!-- Port bindings to transports and encoding - HTTP, document literal encoding is used -->
+    <wsdl:binding name="FetchVideoBinding" type="tns:FetchVideoEndpoint">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="FetchVideo">
+            <soap:operation
+                    soapAction="http://webservices.waid.com/FetchVideo"
+                    style="document"/>
+            <wsdl:input>
+                <soap:body parts="in" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="out" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <!-- Service definition -->
+    <wsdl:service name="FetchVideoEndpointService">
+        <wsdl:port name="FetchVideoEndpoint" binding="tns:FetchVideoBinding">
+            <soap:address location="http://localhost:8181/video-info/webservices/videos"/>
+        </wsdl:port>
+    </wsdl:service>
+
+</wsdl:definitions>
