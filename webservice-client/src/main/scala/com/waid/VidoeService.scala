@@ -79,14 +79,14 @@ class VideoService extends Actor with ActorLogging {
       """<!DOCTYPE html>
       <html lang="en">
         <head>
-          <script type="text/javascript" src="http://192.168.1.6/jquery-1.11.1.min.js"></script>
+          <script type="text/javascript" src="http://192.168.1.5/jquery-1.11.1.min.js"></script>
           <!-- Latest compiled and minified CSS -->
-          <link rel="stylesheet" href="//192.168.1.6/bootstrap/css/bootstrap.min.css">
+          <link rel="stylesheet" href="//192.168.1.5/bootstrap/css/bootstrap.min.css">
           <!-- Optional theme -->
-          <link rel="stylesheet" href="//192.168.1.6/bootstrap/css/bootstrap-theme.min.css">
+          <link rel="stylesheet" href="//192.168.1.5/bootstrap/css/bootstrap-theme.min.css">
 
           <!-- Latest compiled and minified JavaScript -->
-          <script src="//192.168.1.6/bootstrap/js/bootstrap.min.js"></script>
+          <script src="//192.168.1.5/bootstrap/js/bootstrap.min.js"></script>
         </head>
         <body>
           <script>

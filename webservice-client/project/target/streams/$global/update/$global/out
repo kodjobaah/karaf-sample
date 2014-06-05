@@ -100,7 +100,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/mpeltonen/sbt-idea_2.10_0.13/1.6.0/sbt-idea-1.6.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/mpeltonen/sbt-idea_2.10_0.13/1.6.0/sbt-idea-1.6.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/mpeltonen/sbt-idea_2.10_0.13/1.6.0/sbt-idea-1.6.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.mpeltonen#sbt-idea;1.6.0!sbt-idea.pom(pom.original) (944ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.mpeltonen#sbt-idea;1.6.0!sbt-idea.pom(pom.original) (357ms)[0m
 [0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/com.github.mpeltonen/sbt-idea/1.6.0/jars/sbt-idea.jar[0m
 [0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.github.mpeltonen/sbt-idea/1.6.0/jars/sbt-idea.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.mpeltonen/sbt-idea/1.6.0/jars/sbt-idea.jar[0m
@@ -212,7 +212,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#webservice-client-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#webservice-client-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7baaa1bf[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@50dcb4b5[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -1645,7 +1645,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.1!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 11099ms :: artifacts dl 176ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 7061ms :: artifacts dl 203ms[0m
 [0m[[0mdebug[0m] [0m	report for default#webservice-client-build;0.1-SNAPSHOT compile produced in C:\Users\whatamidoing\karaf\karaf-sample\webservice-client\project\target\resolution-cache\reports\default-webservice-client-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#webservice-client-build;0.1-SNAPSHOT runtime produced in C:\Users\whatamidoing\karaf\karaf-sample\webservice-client\project\target\resolution-cache\reports\default-webservice-client-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#webservice-client-build;0.1-SNAPSHOT test produced in C:\Users\whatamidoing\karaf\karaf-sample\webservice-client\project\target\resolution-cache\reports\default-webservice-client-build-test.xml[0m
@@ -1659,5 +1659,5 @@
 [0m[[0mdebug[0m] [0m	report for default#webservice-client-build;0.1-SNAPSHOT docs produced in C:\Users\whatamidoing\karaf\karaf-sample\webservice-client\project\target\resolution-cache\reports\default-webservice-client-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#webservice-client-build;0.1-SNAPSHOT pom produced in C:\Users\whatamidoing\karaf\karaf-sample\webservice-client\project\target\resolution-cache\reports\default-webservice-client-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#webservice-client-build;0.1-SNAPSHOT scala-tool produced in C:\Users\whatamidoing\karaf\karaf-sample\webservice-client\project\target\resolution-cache\reports\default-webservice-client-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (11099ms resolve - 176ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (7061ms resolve - 203ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

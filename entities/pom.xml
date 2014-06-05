@@ -3,15 +3,18 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.waid</groupId>
-  		<artifactId>karaf-sample-parent</artifactId>
-  		<version>0.0.1</version>
+		<artifactId>karaf-sample-parent</artifactId>
+		<version>0.0.1</version>
 		<relativePath>../pom.xml</relativePath>
- 	</parent>
+	</parent>
 	<artifactId>entities</artifactId>
 	<packaging>bundle</packaging>
 	<name>karaf sample entities</name>
 
 
+	<properties>
+		<dependency.pax-exam.version>3.4.0</dependency.pax-exam.version>
+	</properties>
 	<dependencies>
 		<!-- Active MQ -->
 		<dependency>
@@ -29,7 +32,16 @@
 			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.core</artifactId>
 			<version>4.3.1</version>
+			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.compendium</artifactId>
+			<version>4.3.1</version>
+			<scope>provided</scope>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.apache.camel</groupId>
@@ -42,16 +54,16 @@
 			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-jaxb</artifactId>
 			<version>2.13.1</version>
-			<type>bundle</type>			
+			<type>bundle</type>
 		</dependency>
-	
+
 		<dependency>
 			<groupId>com.waid</groupId>
 			<artifactId>webservice-interface</artifactId>
 			<version>0.0.1</version>
 			<scope>provided</scope>
 		</dependency>
-			
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -71,16 +83,11 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.osgi</groupId>
-			<artifactId>org.osgi.core</artifactId>
-			<version>4.2.0</version>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.karaf.shell</groupId>
 			<artifactId>org.apache.karaf.shell.console</artifactId>
 			<version>3.0.0</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -157,9 +164,109 @@
 			<artifactId>asm-all</artifactId>
 			<version>4.1</version>
 			<scope>test</scope>
+
+		</dependency>
+		<!-- Pax Exam Dependencies -->
+
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam-inject</artifactId>
+			<version>${dependency.pax-exam.version}</version>
+			<scope>test</scope>
+
+		</dependency>
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam-extender-service</artifactId>
+			<version>${dependency.pax-exam.version}</version>
+			<scope>test</scope>
+
 		</dependency>
 
-		
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam</artifactId>
+			<version>${dependency.pax-exam.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam-spi</artifactId>
+			<version>${dependency.pax-exam.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam-container-remote</artifactId>
+			<version>${dependency.pax-exam.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam-container-rbc</artifactId>
+			<version>${dependency.pax-exam.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam-container-rbc-client</artifactId>
+			<version>${dependency.pax-exam.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam-invoker-junit</artifactId>
+			<version>${dependency.pax-exam.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam-container-native</artifactId>
+			<version>${dependency.pax-exam.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam-link-mvn</artifactId>
+			<version>${dependency.pax-exam.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam-testforge</artifactId>
+			<version>${dependency.pax-exam.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam-link-assembly</artifactId>
+			<version>${dependency.pax-exam.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Karaf Test Framework Version -->
+		<dependency>
+			<groupId>org.apache.karaf.tooling.exam</groupId>
+			<artifactId>org.apache.karaf.tooling.exam.container</artifactId>
+			<version>2.3.2</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Pax Exam version you would like to use. At least 2.2.x is required. -->
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam-junit4</artifactId>
+			<version>2.6.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.ops4j.pax.exam</groupId>
+			<artifactId>pax-exam-container-karaf</artifactId>
+			<version>${dependency.pax-exam.version}</version>
+			<scope>test</scope>
+
+		</dependency>
+
 	</dependencies>
 
 

@@ -19,7 +19,7 @@
              http://cxf.apache.org/blueprint/core http://cxf.apache.org/schemas/blueprint/core.xsd
              ">
 
-	<camelcxf:cxfEndpoint id="fetchVideo" address="/video-info/webservices/video"
+	<camelcxf:cxfEndpoint id="fetchVideo" address="http://localhost:9191/test/video-info/webservices/video"
 		endpointName="s:FetchVideoEndpoint" serviceName="s:FetchVideoEndpointService"
 		wsdlURL="classpath:wsdl/video_info.wsdl" serviceClass="com.waid.webservice.FetchVideoEndpoint"
 		xmlns:s="http://webservice.waid.com" />

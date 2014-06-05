@@ -2,7 +2,6 @@ package com.waid;
 
 import akka.actor.{Props, ActorSystem, ActorLogging, Actor}
 import akka.util.Timeout
-import com.waid.model.Value.UpdateDetails
 import org.apache.cxf.jaxws.endpoint.dynamic.JaxWsDynamicClientFactory
 import org.apache.cxf.endpoint.{Endpoint, ClientImpl, Client}
 import java.lang.reflect.Method

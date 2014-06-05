@@ -69,7 +69,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala" line="5" class="UpdateVideoDetails.scala" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala" line="4" class="UpdateVideoDetails.scala" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -84,7 +84,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala" line="6" class="UpdateVideoDetails.scala" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala" line="5" class="UpdateVideoDetails.scala" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -114,7 +114,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala" line="29" class="com.waid.UpdateVideoDetails" package="com.waid">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala" line="28" class="com.waid.UpdateVideoDetails" package="com.waid">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -129,7 +129,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala" line="12" class="UpdateVideoDetails.scala" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala" line="11" class="UpdateVideoDetails.scala" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -154,13 +154,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="VidoeService.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="VidoeService.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/waid/VidoeService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="36" selection-start="5583" selection-end="5583" vertical-scroll-proportion="0.4950495">
+            <state line="103" column="63" selection-start="3554" selection-end="3554" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#18#55#0" expanded="true" />
                 <element signature="e#1304#1327#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateVideoDetails.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="46" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1637#1656#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,22 +186,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DynamicClientFactory.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DynamicClientFactory.java" pinned="false" current="true" current-in-tab="true">
         <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.cxf/cxf-rt-databinding-jaxb/srcs/cxf-rt-databinding-jaxb-2.7.8-sources.jar!/org/apache/cxf/endpoint/dynamic/DynamicClientFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="703" column="0" selection-start="27697" selection-end="27697" vertical-scroll-proportion="0.0">
+            <state line="704" column="28" selection-start="27749" selection-end="27749" vertical-scroll-proportion="0.42328042">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateVideoDetails.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="0" selection-start="1887" selection-end="1887" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#1679#1698#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -198,7 +198,7 @@
       <file leaf-file-name="InvokeCXF.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/waid/utils/InvokeCXF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="13" selection-start="2404" selection-end="2404" vertical-scroll-proportion="0.0">
+            <state line="28" column="67" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -266,9 +266,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.java" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/com/waid/model/Value.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/com/waid/utils/InvokeCXF.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/waid/VidoeService.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/waid/utils/InvokeCXF.java" />
       </list>
     </option>
   </component>
@@ -352,16 +352,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webservice-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -384,32 +374,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="webservice-client">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="webservice-client">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main/java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="com/waid/utils">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="InvokeCXF">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane">
@@ -428,6 +392,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="webservice-client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -608,14 +582,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="188" y="17" width="1024" height="553" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274559" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36962026" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36962026" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39746836" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -624,7 +598,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24948025" sideWeight="0.6278481" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24948025" sideWeight="0.6278481" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24948025" sideWeight="0.63037974" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -779,36 +753,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.cxf/cxf-rt-databinding-jaxb/srcs/cxf-rt-databinding-jaxb-2.7.8-sources.jar!/org/apache/cxf/endpoint/dynamic/DynamicClientFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/waid/VidoeService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="703" column="0" selection-start="27697" selection-end="27697" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/waid/utils/InvokeCXF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="13" selection-start="2404" selection-end="2404" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="103" column="63" selection-start="3554" selection-end="3554" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#18#55#0" expanded="true" />
+            <element signature="e#1304#1327#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="1887" selection-end="1887" vertical-scroll-proportion="0.0">
+        <state line="8" column="46" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#1679#1698#0" expanded="true" />
+            <element signature="e#1637#1656#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/waid/VidoeService.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/waid/utils/InvokeCXF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="36" selection-start="5583" selection-end="5583" vertical-scroll-proportion="0.4950495">
-          <folding>
-            <element signature="e#18#55#0" expanded="true" />
-            <element signature="e#1304#1327#0" expanded="true" />
-          </folding>
+        <state line="28" column="67" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.cxf/cxf-rt-databinding-jaxb/srcs/cxf-rt-databinding-jaxb-2.7.8-sources.jar!/org/apache/cxf/endpoint/dynamic/DynamicClientFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="704" column="28" selection-start="27749" selection-end="27749" vertical-scroll-proportion="0.42328042">
+          <folding />
         </state>
       </provider>
     </entry>

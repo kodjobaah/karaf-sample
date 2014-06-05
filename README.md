@@ -1,6 +1,21 @@
 Karaf Sample Project Usig cxf, camel, activemq and openjpa
 ==================
-
+Components:
+<div>
+webservice-interface: This project uses wsdltojava to create cxf objects
+and also contains the wsld
+</div>
+<div>
+webservice-camel: This exposes a webservices endpoint and upon invocation
+stores the details of the request on to a queue
+</div>
+<div>
+entities: This process all messages that arrive on the queue(using a camel route) and stores the data using openjpa.
+</div>
+<div>
+webservice-client: This is spray-can application that presents a page
+that can be using to invoke the service endpoints exposed by webservice-camel
+</div>
 From the parent Project:
 mvn install
 
@@ -85,6 +100,5 @@ To run the client application<br/>
 To test installation type:<br/>
 >http://localhost:8080<br/>
 This will provide you with a test page that does a round trip test of all the components.<br/>
-
 
  

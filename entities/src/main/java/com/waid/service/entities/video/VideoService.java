@@ -7,7 +7,7 @@ import com.waid.service.entities.entity.Video;
 
 public interface VideoService {
 
-	void addVideo(Video video);
+	Video addVideo(Video video);
 	   
     void deleteAll();
     

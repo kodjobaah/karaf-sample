@@ -21,9 +21,9 @@ public class StoreVideoRoute extends RouteBuilder {
         getContext().getTypeConverterRegistry().addTypeConverter(Video.class, InputFetchVideo.class, new VideoInputConverter());
     	
         
-        from("activemq:queue:video.info.queue")
+        from("{{activemq.video.info.endpoint}}")
         .convertBodyTo(InputFetchVideo.class)
         .beanRef("videoService","addVideo")
-        .to("log:foo");
+        .to("{{output.route}}");
        }
 }

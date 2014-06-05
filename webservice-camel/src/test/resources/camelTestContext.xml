@@ -20,15 +20,25 @@
              ">
 
 
+	<camelcxf:cxfEndpoint id="fetchVideo" address="/video-info/webservices/video"
+		endpointName="s:FetchVideoEndpoint" serviceName="s:FetchVideoEndpointService"
+		wsdlURL="classpath:wsdl/video_info.wsdl" serviceClass="com.waid.webservice.FetchVideoEndpoint"
+		xmlns:s="http://webservice.waid.com" />
+		
+<!-- 
   <camelcxf:cxfEndpoint id="sendTest" address="http://localhost:8181/cxf/camel-test/contol"
         serviceClass="de.nierbeck.camel.exam.demo.control.WebServiceOrder" wsdlURL="wsdl/WebServiceOrder.wsdl" >
         <camelcxf:properties>
             <entry key="dataFormat" value="POJO" />
         </camelcxf:properties>
     </camelcxf:cxfEndpoint>
+ -->
+<bean id="fetchVideoRoute" class="com.waid.route.FetchVideoRoute" />
 
 	<camelContext trace="true" id="camel"
 		xmlns="http://camel.apache.org/schema/blueprint">
+		<propertyPlaceholder id="properties"
+            location="classpath:META-INF/uri.properties"  />
 		<routeBuilder ref="fetchVideoRoute" />
 	</camelContext>
 

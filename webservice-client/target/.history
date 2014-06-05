@@ -87,3 +87,12 @@ exit
 d
 ~re-start
 exit
+~re-start
+clean
+~re-start
+clean
+~re-start
+exit
+~re-start
+sexit
+exit

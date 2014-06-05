@@ -1,8 +1,5 @@
 package com.waid.service.converter;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.apache.camel.Exchange;
 import org.apache.camel.TypeConversionException;
 import org.apache.camel.support.TypeConverterSupport;

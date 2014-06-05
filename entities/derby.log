@@ -1,10 +1,3 @@
 ----------------------------------------------------------------
-Wed Jun 04 00:53:32 BST 2014:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0146-6426-f193-000006ceb6b0 
-on database directory C:\Users\whatamidoing\karaf\karaf-sample\entities\target\test  with class loader sun.misc.Launcher$AppClassLoader@4665d588 
-Loaded from file:/C:/Users/whatamidoing/.m2/repository/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.jar
-java.vendor=Oracle Corporation
-java.runtime.version=1.7.0_45-b18
-user.dir=C:\Users\whatamidoing\karaf\karaf-sample\entities
-derby.system.home=null
-Database Class Loader started - derby.database.classpath=''
+Thu Jun 05 14:25:32 BST 2014: Shutting down Derby engine
+----------------------------------------------------------------

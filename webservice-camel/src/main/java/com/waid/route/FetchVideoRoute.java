@@ -38,7 +38,7 @@ public class FetchVideoRoute extends RouteBuilder {
         .transform(constant(ok));
         
         from("seda:save")
-        .to("activemq:queue:video.info.queue");
+        .to("{{activemq.video.info.endpoint}}");
         //.to("activemq:queue:video.info.queue");
         
           //  .convertBodyTo(InputReportIncident.class)
