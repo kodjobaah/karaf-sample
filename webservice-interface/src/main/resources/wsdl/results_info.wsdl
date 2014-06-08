@@ -26,20 +26,17 @@
     <!-- Type definitions for input- and output parameters for webservice -->
     <wsdl:types>
         <xs:schema targetNamespace="http://webservice.waid.com">
-            <xs:element name="inputFetchVideo">
+            <xs:element name="inputFetchResults">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element type="xs:string" name="videoId"/>
-       					<xs:element name="name" type="xs:string" nillable="true" minOccurs="0" 
-            maxOccurs="unbounded"/>
-                     </xs:sequence>
+                        <xs:element type="xs:string" name="id"/>
+       				 </xs:sequence>
                 </xs:complexType>
             </xs:element>
-            <xs:element name="outputFetchVideo">
+            <xs:element name="outputFetchResults">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element type="xs:string" name="name"/>
-                        <xs:element type="xs:integer" name="amount" />
+                        <xs:element type="xs:string" name="message"/>
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
@@ -48,29 +45,29 @@
     </wsdl:types>
 
     <!-- Message definitions for input and output -->
-    <wsdl:message name="inputFetchVideo">
-        <wsdl:part name="in" element="tns:inputFetchVideo"/>
+    <wsdl:message name="inputFetchResults">
+        <wsdl:part name="in" element="tns:inputFetchResults"/>
     </wsdl:message>
-    <wsdl:message name="outputFetchVideo">
-        <wsdl:part name="out" element="tns:outputFetchVideo"/>
+    <wsdl:message name="outputFetchResults">
+        <wsdl:part name="out" element="tns:outputFetchResults"/>
     </wsdl:message>
    
+   
     <!-- Port (interface) definitions -->
-    <wsdl:portType name="FetchVideoEndpoint">
-        <wsdl:operation name="FetchVideo">
-            <wsdl:input message="tns:inputFetchVideo"/>
-            <wsdl:output message="tns:outputFetchVideo"/>
+    <wsdl:portType name="GetResultsEndpoint">
+        <wsdl:operation name="FetchResults">
+            <wsdl:input message="tns:inputFetchResults"/>
+            <wsdl:output message="tns:outputFetchResults"/>
         </wsdl:operation>
     </wsdl:portType>
 
-
-
+   
     <!-- Port bindings to transports and encoding - HTTP, document literal encoding is used -->
-    <wsdl:binding name="FetchVideoBinding" type="tns:FetchVideoEndpoint">
+    <wsdl:binding name="GetResultsBinding" type="tns:GetResultsEndpoint">
         <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
-        <wsdl:operation name="FetchVideo">
+        <wsdl:operation name="FetchResults">
             <soap:operation
-                    soapAction="http://webservices.waid.com/FetchVideo"
+                    soapAction="http://webservices.waid.com/FetchResults"
                     style="document"/>
             <wsdl:input>
                 <soap:body parts="in" use="literal"/>
@@ -81,12 +78,12 @@
         </wsdl:operation>
     </wsdl:binding>
 
-
-       <!-- Service definition -->
-    <wsdl:service name="FetchVideoEndpointService">
-        <wsdl:port name="FetchVideoEndpoint" binding="tns:FetchVideoBinding">
+    <!-- Service definition -->
+    <wsdl:service name="ResultsEndpointService">
+        <wsdl:port name="GetResultsEndpoint" binding="tns:GetResultsBinding">
             <soap:address location="/video-info/webservices/videos"/>
         </wsdl:port>
-   </wsdl:service>
+ 
+    </wsdl:service>
     
  </wsdl:definitions>

@@ -26,7 +26,7 @@ public class InvokeCXF {
 
          ClassLoader classloader =  Thread.currentThread().getContextClassLoader();
         JaxWsDynamicClientFactory dcf = JaxWsDynamicClientFactory.newInstance();
-        Client cl = dcf.createClient("http://192.168.1.5:8181/video/video-info/webservices/video?wsdl",classloader);
+        Client cl = dcf.createClient("http://192.168.1.6:8181/video/video-info/webservices/video?wsdl",classloader);
         ClientImpl client = (ClientImpl)cl;
         classloader = Thread.currentThread().getContextClassLoader();
         Object videoInput  =   classloader.loadClass("com.waid.webservice.InputFetchVideo").newInstance();

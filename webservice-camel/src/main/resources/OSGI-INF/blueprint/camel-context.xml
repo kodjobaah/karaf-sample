@@ -19,19 +19,30 @@
              http://cxf.apache.org/blueprint/core http://cxf.apache.org/schemas/blueprint/core.xsd
              ">
 
-	<camelcxf:cxfEndpoint id="fetchVideo" address="http://localhost:9191/test/video-info/webservices/video"
+	<camelcxf:cxfEndpoint id="fetchVideo" address="/video-info/webservices/video"
 		endpointName="s:FetchVideoEndpoint" serviceName="s:FetchVideoEndpointService"
 		wsdlURL="classpath:wsdl/video_info.wsdl" serviceClass="com.waid.webservice.FetchVideoEndpoint"
 		xmlns:s="http://webservice.waid.com" />
 
+	<camelcxf:cxfEndpoint id="getResults" address="/video-info/webservices/results"
+		endpointName="s:GetResultsEndpoint" serviceName="s:ResultsEndpointService"
+		wsdlURL="classpath:wsdl/results_info.wsdl" serviceClass="com.waid.webservice.GetResultsEndpoint"
+		xmlns:s="http://webservice.waid.com" />
+
 	<bean id="fetchVideoRoute" class="com.waid.route.FetchVideoRoute" />
+	<bean id="getResultsRoute" class="com.waid.route.GetResultsRoute" />
 
 	<camel:camelContext id="camel"
 		xmlns="http://camel.apache.org/schema/blueprint">
 		<propertyPlaceholder id="properties"
             location="classpath:META-INF/uri.properties"  />
 		<routeBuilder ref="fetchVideoRoute" />
+		<routeBuilder ref="getResultsRoute" />
 	</camel:camelContext>
+
+
+	
+	<bean id="sessionInfo" class="com.waid.route.SessionInfo" />
 
 	<bean id="jmsConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
 		<property name="brokerURL" value="tcp://localhost:61616" />

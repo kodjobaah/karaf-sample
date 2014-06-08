@@ -138,6 +138,9 @@
 								<wsdlOption>
 									<wsdl>${basedir}/src/main/resources/wsdl/video_info.wsdl</wsdl>
 								</wsdlOption>
+								<wsdlOption>
+									<wsdl>${basedir}/src/main/resources/wsdl/results_info.wsdl</wsdl>
+								</wsdlOption>
 							</wsdlOptions>
 						</configuration>
 						<goals>

@@ -34,13 +34,15 @@
     </camelcxf:cxfEndpoint>
  -->
 <bean id="fetchVideoRoute" class="com.waid.route.FetchVideoRoute" />
+	<bean id="getResultsRoute" class="com.waid.route.GetResultsRoute" />
 
-	<camelContext trace="true" id="camel"
+	<camel:camelContext id="camel"
 		xmlns="http://camel.apache.org/schema/blueprint">
 		<propertyPlaceholder id="properties"
             location="classpath:META-INF/uri.properties"  />
 		<routeBuilder ref="fetchVideoRoute" />
-	</camelContext>
+		<routeBuilder ref="getResultsRoute" />
+	</camel:camelContext>
 
 
 	<bean id="activemq" class="org.apache.activemq.camel.component.ActiveMQComponent">

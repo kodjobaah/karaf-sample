@@ -484,6 +484,7 @@
       <attribute value="jar:file:/C:/Users/whatamidoing/.m2/repository/org/apache/felix/org.apache.felix.fileinstall/3.2.6/org.apache.felix.fileinstall-3.2.6-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/poi/poi/3.1-FINAL/poi-3.1-FINAL.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/jvnet/mock-javamail/mock-javamail/1.9/mock-javamail-1.9.jar" sourcepath="M2_REPO/org/jvnet/mock-javamail/mock-javamail/1.9/mock-javamail-1.9-sources.jar">
     <attributes>
       <attribute value="jar:file:/C:/Users/whatamidoing/.m2/repository/org/jvnet/mock-javamail/mock-javamail/1.9/mock-javamail-1.9-javadoc.jar!/" name="javadoc_location"/>

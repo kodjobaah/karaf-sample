@@ -19,9 +19,10 @@ import org.apache.openjpa.persistence.OpenJPAQuery;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.waid.service.entities.entity.Video;
 import com.waid.service.entities.entity.Viewer;
+import com.waid.service.entities.entity.Video;
 import com.waid.service.entities.video.VideoServiceImpl;
+import com.waid.service.entities.video.MyInitialContextFactory;
 
 public class VideoServiceImplTest {
 
@@ -57,6 +58,7 @@ public class VideoServiceImplTest {
         Viewer viewer = new Viewer();
         viewer.setName("kodjo");
         Video video = new Video("Christian Schneider");
+        viewer.setVideo(video);
         video.addViewer(viewer);
         videoService.addVideo(video);
         em.getTransaction().commit();

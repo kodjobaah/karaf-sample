@@ -99,21 +99,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="jar://$USER_HOME$/.ivy2/cache/org.apache.cxf/cxf-rt-databinding-jaxb/srcs/cxf-rt-databinding-jaxb-2.7.8-sources.jar!/org/apache/cxf/endpoint/dynamic/DynamicClientFactory.java" line="703" class="org.apache.cxf.endpoint.dynamic.DynamicClientFactory" package="org.apache.cxf.endpoint.dynamic">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/main/scala/com/waid/UpdateVideoDetails.scala" line="28" class="com.waid.UpdateVideoDetails" package="com.waid">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -189,7 +174,7 @@
       <file leaf-file-name="DynamicClientFactory.java" pinned="false" current="true" current-in-tab="true">
         <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.cxf/cxf-rt-databinding-jaxb/srcs/cxf-rt-databinding-jaxb-2.7.8-sources.jar!/org/apache/cxf/endpoint/dynamic/DynamicClientFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="704" column="28" selection-start="27749" selection-end="27749" vertical-scroll-proportion="0.42328042">
+            <state line="703" column="0" selection-start="27697" selection-end="27697" vertical-scroll-proportion="0.33333334">
               <folding />
             </state>
           </provider>
@@ -198,7 +183,7 @@
       <file leaf-file-name="InvokeCXF.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/waid/utils/InvokeCXF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="67" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
+            <state line="28" column="56" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -356,20 +341,6 @@
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="webservice-client">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="webservice-client">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -582,7 +553,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="188" y="17" width="1024" height="553" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -774,14 +745,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/waid/utils/InvokeCXF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="67" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
+        <state line="28" column="56" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.apache.cxf/cxf-rt-databinding-jaxb/srcs/cxf-rt-databinding-jaxb-2.7.8-sources.jar!/org/apache/cxf/endpoint/dynamic/DynamicClientFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="704" column="28" selection-start="27749" selection-end="27749" vertical-scroll-proportion="0.42328042">
+        <state line="703" column="0" selection-start="27697" selection-end="27697" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>

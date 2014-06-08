@@ -8,11 +8,13 @@ import org.apache.camel.language.bean.BeanLanguage;
 import org.apache.camel.processor.interceptor.Tracer;
 
 import com.waid.utils.FileNameGenerator;
+import com.waid.webservice.InputFetchResults;
 import com.waid.webservice.InputFetchVideo;
+import com.waid.webservice.OutputFetchResults;
 import com.waid.webservice.OutputFetchVideo;
 
 
-public class FetchVideoRoute extends RouteBuilder {
+public class GetResultsRoute extends RouteBuilder {
   
 	
     public void configure() throws Exception {
@@ -23,23 +25,21 @@ public class FetchVideoRoute extends RouteBuilder {
         
         getContext().addInterceptStrategy(tracer);
         // webservice responses
-    
-        OutputFetchVideo ok = new OutputFetchVideo();
-    	ok.setName("testing something");
+    	OutputFetchResults ok = new OutputFetchResults();
+    		
+    	ok.setMessage("done");
 
         //OutputReportIncident accepted = new OutputReportIncident();
         //accepted.setCode("Accepted");
 
-        from("{{cxf.bean.cxfEndpoint}}")
-        .convertBodyTo(InputFetchVideo.class)
-		.wireTap("seda:save")
-        .setHeader(Exchange.FILE_NAME,BeanLanguage.bean(FileNameGenerator.class,"generateFilename"))
-		.pipeline("velocity:MailBody.vm","file://target/subfolder")
-        .log(LoggingLevel.INFO,"com.waid.webservice","video to fetch ${body}")
+    	SessionInfo sessionInfo = (SessionInfo)getContext().getRegistry().lookupByName("sessionInfo");
+        from("{{cxf.bean.results.cxfEndpoint}}")
+        .convertBodyTo(InputFetchResults.class)
+        .beanRef("sessionInfo","setSessionId")
+        .from("{{results.queue}}")
+        .filter().method("sessionInfo","isRequiredResponse")
         .transform(constant(ok));
         
-        from("seda:save")
-        .to("{{activemq.video.info.endpoint}}");
         //.to("activemq:queue:video.info.queue");
         
           //  .convertBodyTo(InputReportIncident.class)

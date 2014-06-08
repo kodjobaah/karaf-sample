@@ -26,6 +26,8 @@
 
 
   <camelContext id="camel" xmlns="http://camel.apache.org/schema/blueprint">
+    <propertyPlaceholder id="properties"
+            location="classpath:META-INF/uri.properties"  />
     <routeBuilder ref="storeVideoRoute"/>
   </camelContext>
   

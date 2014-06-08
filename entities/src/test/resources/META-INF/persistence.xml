@@ -24,6 +24,7 @@
     <persistence-unit name="videoTest" transaction-type="RESOURCE_LOCAL">
         <non-jta-data-source>osgi:service/javax.sql.DataSource/(osgi.jndi.service.name=jdbc/waid)</non-jta-data-source>
         <class>com.waid.service.entities.entity.Video</class>
+         <class>com.waid.service.entities.entity.Viewer</class>
         <class>com.waid.service.entities.entity.BaseEntity</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
